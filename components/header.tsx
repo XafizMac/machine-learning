@@ -7,11 +7,9 @@ import { BrainCircuit } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { ModeToggle } from "@/components/mode-toggle";
@@ -80,7 +78,7 @@ function MobileNav() {
     <div className="flex items-center gap-2">
       <Button
         variant="ghost"
-        size="icon"
+        size="default"
         asChild
       >
         <Link href="/lectures">
@@ -90,7 +88,7 @@ function MobileNav() {
       </Button>
       <Button
         variant="ghost"
-        size="icon"
+        size="default"
         asChild
       >
         <Link href="/labs">
@@ -100,7 +98,7 @@ function MobileNav() {
       </Button>
       <Button
         variant="ghost"
-        size="icon"
+        size="default"
         asChild
       >
         <Link href="/glossary">

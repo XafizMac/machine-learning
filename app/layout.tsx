@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ['latin', 'cyrillic'] });
 export const metadata: Metadata = {
   title: 'ML - Обучение машинному обучению',
   description: 'Образовательный портал по машинному обучению',
+  icons: "https://icon-library.com/images/machine-learning-icon/machine-learning-icon-28.jpg"
 };
 
 export default function RootLayout({

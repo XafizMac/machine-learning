@@ -29,7 +29,7 @@ export default function FileCard({ number, title, description, fileType, fileUrl
   
   return (
     <Card 
-      className="transition-all duration-300 hover:shadow-md hover:border-primary/50"
+      className="transition-all duration-300 hover:shadow-md hover:border-primary/50 flex flex-col justify-between"
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
