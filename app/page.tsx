@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
-import { Lightbulb, Beaker, BookOpen } from "lucide-react";
+import { Lightbulb, Beaker, BookOpen, FileQuestion } from "lucide-react";
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
               <Link href="/lectures">Начать обучение</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a target="_blank" href="https://machine-learning-kstu.s3.eu-north-1.amazonaws.com/labs/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B0%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%9A%D1%83%D1%80%D1%81%D0%B0.pdf?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmV1LW5vcnRoLTEiRzBFAiBIfgJJ4aExGHnGlRtm4d5pOHK%2Be%2FCoRBFU4ubqk8OGuAIhAJFtRswyXKbDWRpk5HtRwFGozwU2deFkz6F4s9XxXEZ4KvkCCEAQABoMMzM2MzAwNTI1MzY3IgwA0Ekb3PGEBaCDO6Eq1gLpQERYmCMk%2Fpe%2FWqRGl1deNbO9V9A1X1%2BMn7ULNW49BTt%2Bks4QQbvxVHawxsie%2FrJN8KzloDZ%2F6SlP%2BI2ebAbcL9IXByHEj5jJhB5n38SxH0SlnV5cWI8X%2FW4n5HPs2MNynqU0ZjMLKjvfpNxhbZjdqG3OYH9NQ8amwEBBpY%2BQ3I9UjYtqL0%2FeanpBgzfMsWLoRW1xea56cw3jIgrclNMqks%2BeZGDEnsTtGgypjg5cHRdZt%2F4NHlm01jxfo4tAzoS5zM1r7cTzneVft8VVvjVJhxofz2uTpoMLmv78zqcJcYXrqil4Ky%2FtYBk8aXNQBf%2F2k%2FaAmKFIYGot7BNuUr1ti7nxQU8SZJ0oP2PvxVT%2BVOkLeYVSuhL2RxiE6paPVwf9n2flInmY4MEKNmw3Q%2Bl9xUxu90B%2FLDYLLUAGKyrZLCSXRAyJbWYQKS0318AhZyH5LE70gokwjqWbwQY6jwKH0WKMO%2BuH8qxaw37Gwqxz24tZeDCI6zTyMcJGbA71B5APjg%2B%2BFIzR2kJAl75zeumMCgWo2YvbRd6zL4CSfBUjLmqRIFib4HT0fyQ%2F4YoL6O%2FFhLYnzN2sMABjULPGTsp8ZP5uiJMr9wu0dKm1QA2OE6q4zx7aACB4Aoq2%2BUgGJFruwF36bI7KO162ANdm29K6xBUCxEQW7S0N%2BgltJ64FLgf2sBnhSnWVbAMM37nO%2BKDh%2FEUC1B04tSjQVXWHKpZ5LvJNrZNev%2BnCkl6XvTXMIn%2FhgwoSSaip1MfxYzIyEPxUxZANzIGX0Oa4yAoW9%2Bg%2FVe3Kq36m6S7rCPkkL0BLDsOQbUPh9yDQqNiP4Xfu&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAU4TISY43X76N4C53%2F20250516%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20250516T065949Z&X-Amz-Expires=43200&X-Amz-SignedHeaders=host&X-Amz-Signature=44a49ed200861f35160dc68fe95ff9f053a99006b8f64efd3e63ced26ac6d1a7">Программа курса</a>
+              <a target="_blank" href="https://machine-learning-kstu.s3.eu-north-1.amazonaws.com/labs/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B0%D1%8F+%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0+%D0%9A%D1%83%D1%80%D1%81%D0%B0.pdf">Программа курса</a>
             </Button>
           </div>
         </div>
@@ -90,6 +90,21 @@ export default function Home() {
             <CardFooter>
               <Button asChild>
                 <Link href="/glossary">Перейти к глоссарию</Link>
+              </Button>
+            </CardFooter>
+          </Card>
+
+          <Card className="transition-all hover:shadow-lg">
+            <CardHeader className="flex flex-row items-center gap-4">
+              <FileQuestion/>
+              <div>
+                <CardTitle>Тестовые вопросы</CardTitle>
+                <CardDescription>Термины и определения</CardDescription>
+              </div>
+            </CardHeader>
+            <CardFooter>
+              <Button asChild>
+                <Link href="https://machine-learning-kstu.s3.eu-north-1.amazonaws.com/7%D0%90+-+%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5+%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B.pdf">Перейти к тестам</Link>
               </Button>
             </CardFooter>
           </Card>
